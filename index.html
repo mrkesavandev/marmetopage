@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="//marmeto.com/cdn/shop/files/favicon_32x32.png?v=1644448186" type="image/png">
+    <title>Marmeto | Enabling Commerce</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="app-container">
+        <div class="toggle">
+          <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <i class="fa-solid fa-sun sun"></i>
+          <i class="fa-solid fa-moon moon"></i>
+          <div class='ball'> 
+          </div>
+        </label>
+      </div>    
+  
+        <div class="responsive-container">
+          <h1 class="main-heading" id="val" >SELECT YOUR CHOICE</h1>
+          <div class="tabs">
+            <button class="tablinks" onclick="openCategory(event, 'men')">
+              <i class="fa-solid fa-person-dress iconButton"></i>
+              Men
+            </button>
+            <button class="tablinks" onclick="openCategory(event, 'women')">
+              <i class="fa-solid fa-person-pregnant iconButton"></i>
+              Women
+            </button>
+            <button class="tablinks" onclick="openCategory(event, 'kids')">
+              <i class="fa-solid fa-face-kiss-wink-heart iconButton"></i>
+              Kids
+            </button>
+          </div>
+          <div id="men" class="tabcontent"></div>
+          <div id="women" class="tabcontent"></div>
+          <div id="kids" class="tabcontent"></div>
+        </div>
+        
+      </div>
+  
+      <script  src="script.js"></script>
+   
+</body>
+
+</html>
